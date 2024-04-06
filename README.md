@@ -1,8 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-wagmi`](https://github.com/wevm/wagmi/tree/main/packages/create-wagmi).
 
+To run this application locally:
+1. Add your Wallet Connect Project ID to .env.local at `NEXT_PUBLIC_WC_PROJECT_ID`
+2. Run `npm i && npm run dev` to install deps and run local server
+3. Navigate to ` http://localhost:3000` where you will need to connect your Coinbase, Metamask, or WalletConnect wallets.
+4. Select Sign Message to trigger the verifcation flow and view your wallet's account details.
+
+
 Here's what I'd continue to work on if I had more time:
 
-- using Tailwind, Styled Components or some other sort of CSS framework instead of how I handled styling (all inline styling)
+- Using Tailwind, Styled Components or some other sort of CSS framework instead of how I handled styling (all inline styling)
 - Handle form validation with react-hooks-form instead of manually via state
 - I'd add CSS media queries to optimize responsiveness on all device sizes as currently it's only optimized for Desktop, not mobile
 - Enable handling for all error and loading states, as only some are currently handled (e.g. could add them for ENS Address lookup errors, ETH Balance lookup errors, ENS Name lookup errors, and handling all loading states when connecting wallet instead of just "connected" and "disconnected", etc.)
