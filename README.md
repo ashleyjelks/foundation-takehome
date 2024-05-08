@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-wagmi`](https://github.com/wevm/wagmi/tree/main/packages/create-wagmi).
 
+This is an app that will allow you to connect your crypto wallet and view your balance.
+
 To run this application locally:
 1. Add your Wallet Connect Project ID to .env.local at `NEXT_PUBLIC_WC_PROJECT_ID`
 2. Run `npm i && npm run dev` to install deps and run local server
@@ -7,7 +9,7 @@ To run this application locally:
 4. Select Sign Message to trigger the verifcation flow and view your wallet's account details.
 
 
-Here's what I'd continue to work on if I had more time:
+It's pretty bare bones, but here's what I'd continue to work on if I wanted to expand on this project:
 
 - Using Tailwind, Styled Components or some other sort of CSS framework instead of how I handled styling (all inline styling)
 - Handle form validation with react-hooks-form instead of manually via state
